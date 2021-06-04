@@ -1,0 +1,81 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+
+nav#menu {
+    display: block;
+    height: 0px;
+  max-width: 60%;
+  margin: 0 auto; 
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;    
+    background-color: #C7FAC9;
+}
+
+nav#menu li{
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #b0ddb1;
+
+}
+
+nav#menu a {
+    color: #6F6767;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/*DEFININDO CORES DE h1 E h2*/
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    color: #000;
+    font-size: 38pt;
+    padding: 0px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    color: #000;
+    font-size: 20pt;
+}
+
+
+/*DEFININDO CORES DAS TABELAS*/
+
+table {
+    background-color: #F6FFF3;
+    padding: 10px;
+    margin: 10px
+}
+
+table td{
+    background-color: #C7FAC9;
+    padding: 10px;
+    margin: 10px
+}
+
+table td.ce {
+    background-color: #F6FFF3;
+}
+
+/*DEFININDO POSIÇÃO DAS COLUNAS*/
+
+
