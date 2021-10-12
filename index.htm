@@ -1,91 +1,136 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Controle de Despesas</title>
-        <link rel="stylesheet" href="css/style.css"/>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Controle de Despesas</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/colunas.css" />
+  </head>
 
-    <body>
-        <div>
-            <header id="cabecalho">
-            <h1>Controle de Despesas</h1>
-            <nav id="menu">                
-                <ul>
-                    <li><a>Despesas</a></li>
-                    <li><a>Cartão de Crédito</a></li>
-                    <li><a>Alimentação</a></li>
-                    <li><a>Transporte</a></li>
-                    <li><a>Reserva</a></li>
-                </ul>
-            </nav> 
-            </header>
-            
-            <section>
-                <article id="inicial">                    
-                    <table id="saldo">
-                        <tr><td class="ce">Total Recebido:</td><td class="cd"></tdclass>>xxxxxx</td></tr>
-                        <tr><td class="ce">>Total Gastos:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">>Saldo</td><td class="cd">xxxxxx</td></tr>
-                    </table>
-                
-                
-                    <table id="entradas">
-                        <tr><td colspan="2">ENTRADAS</td></tr>
-                        <tr><td class="ce">Salário líquido:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Vale Alimentação:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Outros 1:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Outros 2:</td><td class="cd">xxxxxx</td></tr>                    
-                    </table>
-                </article>
 
-                <article id="principal">
-                    <h2>Despesas</h2>
-                    <table>    
-                        <tr><td colspan="2">Despesas fixas:</td></tr>
-                        <tr><td class="ce">Moradia:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Internet:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Água:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Luz:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Alimentação:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Transporte:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Cartão de Crédito:</td><td class="cd">xxxxxx</td></tr>                        
-                        <tr><td colspan="2">Outras despesas:</td></tr>
-                        <tr><td class="ce">Despesa 1:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Despesa 2:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Despesa 3:</td><td class="cd">xxxxxx</td></tr>
-                    </table>
-
-                    <h2>Cartão de Crédito</h2>
-                    <table>    
-                        <tr><td class="ce"></td>Despesa 1:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Despesa 2:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Despesa 3:</td><td class="cd">xxxxxx</td></tr>                        
-                    </table>
-                </article>
-
-                <article id="secundario">
-                    <h2>Alimentação detalhada</h2>
-                    <table> 
-                        <tr><td class="ce">Ítem 1:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Ítem 2:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Ítem 3:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Ítem 4:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Ítem 5:</td><td class="cd">xxxxxx</td></tr>
-                    </table>
-
-                    <h2>Transporte detalhado:</h2>
-                    <table> 
-                        <tr><td class="ce">Ítem 1:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Ítem 2:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Ítem 3:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Ítem 4:</td><td class="cd">xxxxxx</td></tr>
-                        <tr><td class="ce">Ítem 5:</td><td class="cd">xxxxxx</td></tr>
-                    </table>
-                </article>
-
-            </section>           
+  
+  <body class="site">
+    <header class="cabecalho">
+      <nav id="menu">
+        <ul>
+          <li><a href="#controleDespesas">Despesas</a></li>
+          <li><a href="#detalhamento">Detalhamento</a></li>
+          <li><a href="#reserva">Reserva</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="conteudo">
+      <h1 id= "controleDespesas">Controle de Despesas</h1>
+      <section class ="principal">
+        <div class="despesas">
+          <table>
+            <tr><td colspan="2">DESPESAS FIXAS:</td></tr>
+            <tr><td class="ce">Moradia:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Internet:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Água:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Luz:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Alimentação:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Transporte:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Cartão de Crédito:</td><td class="cd">xxxxxx</td></tr> 
+            <tr><td colspan="2">Outras despesas:</td></tr>
+            <tr><td class="ce">Despesa 1:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 2:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 3:</td><td class="cd">xxxxxx</td></tr>
+          </table>
         </div>
-    </body>
+        <div class="entradas">
+          <table>
+            <tr><td colspan="2">ENTRADAS</td></tr>
+            <tr><td class="ce">Salário líquido:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Vale Alimentação:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Outros 1:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Outros 2:</td><td class="cd">xxxxxx</td></tr>
+          </table>
+        </div>
+        <div class="saldo">
+          <table>
+            <tr><td colspan="2">SALDO</td></tr>
+            <tr><td class="ce">Total Recebido:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Total Gastos:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Saldo</td><td class="cd">xxxxxx</td></tr>
+          </table>
+        </div>
+      </section>
+      <h2 id= "detalhamento">Detalhamento</h2>
+      <section class="contasDetalhadas">
+        <div class="cartao-de-credito">
+          <table>
+            <tr><td colspan="2">CARTÃO DE CRÉDITO</td></tr>
+            <tr><td class="ce">Despesa 1:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 2:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 3</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 4</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 5</td><td class="cd">xxxxxx</td></tr>
+          </table>
+        </div>
+        <div class="alimentacao">
+          <table>
+            <tr><td colspan="2">ALIMENTAÇÃO</td></tr>
+            <tr><td class="ce">Despesa 1:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 2:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 3</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 4</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 5</td><td class="cd">xxxxxx</td></tr>
+          </table>
+        </div>
+        <div class="transporte">
+          <table>
+            <tr><td colspan="2">TRANSPORTE</td></tr>
+            <tr><td class="ce">Despesa 1:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 2:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 3</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 4</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Despesa 5</td><td class="cd">xxxxxx</td></tr>
+          </table>
+        </div>
+      </section>
+      <h2 id="reserva">Reserva</h2>
+      <section class="reservasDetalhadas">
+        <div class="curto-prazo">
+          <table>
+            <tr><td colspan="2">CURTO PRAZO</td></tr>
+            <tr><td class="ce">Projeto 1:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Projeto 2:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Projeto 3:</td><td class="cd">xxxxxx</td></tr>
+          </table>
+          <table id="total-cp">            
+            <tr><td class="ce">Este Mês:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">TOTAL:</td><td class="cd">xxxxxx</td></tr>
+          </table>
+        </div>
+        <div class="medio-prazo">
+          <table>
+            <tr><td colspan="2">MÉDIO PRAZO</td></tr>
+            <tr><td class="ce">Projeto 1:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Projeto 2:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Projeto 3:</td><td class="cd">xxxxxx</td></tr>
+          </table>
+          <table id="total-mp">
+            <tr><td class="ce">Este Mês:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">TOTAL:</td><td class="cd">xxxxxx</td></tr>
+          </table>
+        </div>
+        <div class="longo-prazo">
+          <table>
+            <tr><td colspan="2">LONGO PRAZO</td></tr>
+            <tr><td class="ce">Projeto 1:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Projeto 2:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">Projeto 3:</td><td class="cd">xxxxxx</td></tr>
+          </table>
+          <table id="total-lp">
+            <tr><td class="ce">Este Mês:</td><td class="cd">xxxxxx</td></tr>
+            <tr><td class="ce">TOTAL:</td><td class="cd">xxxxxx</td></tr>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="rodape">por Vanessa Tossetto | Github @vtossetto</footer>
+  </body>
 </html>

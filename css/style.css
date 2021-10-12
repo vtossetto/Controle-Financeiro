@@ -1,81 +1,114 @@
-
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 
+.site {
+  background: #F9EFE5;
+  display: grid;
+  font-family: Arial, sans-serif;
+  grid-template-areas:
+    "cabecalho"
+    "conteudo"
+    "rodape";
+  grid-template-columns: auto;
+  grid-template-rows: 100px auto 50px;
+} 
 
+.cabecalho {
+  grid-area: cabecalho;
+  text-align: center;
+}
+
+.conteudo {
+  grid-area: conteudo;
+}
+
+.rodape {
+  background: #9F5E2E;
+  color: #fff;
+  font-size: 1rem;
+  grid-area: rodape;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*ESTILIZANDO O MENU*/
 nav#menu {
-    display: block;
-    height: 0px;
-  max-width: 60%;
-  margin: 0 auto; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #9F5E2E;
 }
 
-nav#menu ul{
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: -20px;    
-    background-color: #C7FAC9;
+nav#menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  text-transform: uppercase;
+  
 }
 
-nav#menu li{
-    display: inline-block;
-    padding: 10px;
-    margin: 2px;
-    transition: background-color 1s;
+nav#menu li {
+  display: inline-block;
+  padding: 10px;
+  margin: 2px;
+  transition: background-color 0.5s;
 }
 
 nav#menu li:hover {
-    background-color: #b0ddb1;
-
+  background-color: #F9EFE5;
 }
 
 nav#menu a {
-    color: #6F6767;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight:bold
 }
 
 nav#menu a:hover {
-    color: #000;
-    text-decoration: underline;
+  text-decoration: underline;
+  color: #000;
 }
 
 /*DEFININDO CORES DE h1 E h2*/
 
 h1 {
-    font-family: 'Titillium Web', sans-serif;
-    color: #000;
-    font-size: 38pt;
-    padding: 0px;
-    margin-top: 50px;
-    text-align: center;
+  font-family: 'Otomanopee', sans-serif;
+  color: #9F5E2E;
+  font-size: 52pt;
+  text-shadow: 1px 1px 2px black;
+  margin: 50px;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
 h2 {
-    font-family: 'Titillium Web', sans-serif;
-    color: #000;
-    font-size: 20pt;
+  font-family: 'Otomanopee', sans-serif;
+  color: #000;
+  font-size: 30pt;
+  margin: 80px auto;
+  text-align: center;
 }
-
 
 /*DEFININDO CORES DAS TABELAS*/
 
 table {
-    background-color: #F6FFF3;
-    padding: 10px;
-    margin: 10px
+  background-color: #e0b377;
+  padding: 5px;
+  margin: 10px auto;
+  width: 20rem;
 }
 
-table td{
-    background-color: #C7FAC9;
-    padding: 10px;
-    margin: 10px
+table td {
+  background-color: #B3782A;
+  padding: 10px;
+  margin: 10px;
 }
 
 table td.ce {
-    background-color: #F6FFF3;
+  background-color: #fad3a1;
 }
-
-/*DEFININDO POSIÇÃO DAS COLUNAS*/
-
 
