@@ -15,11 +15,12 @@
 
 .cabecalho {
   grid-area: cabecalho;
-  text-align: center;
+  
 }
 
 .conteudo {
   grid-area: conteudo;
+  
 }
 
 .rodape {
@@ -73,7 +74,7 @@ nav#menu a:hover {
   color: #000;
 }
 
-/*DEFININDO CORES DE h1 E h2*/
+/*DEFININDO CORES DE FONTES*/
 
 h1 {
   font-family: 'Otomanopee', sans-serif;
@@ -87,28 +88,12 @@ h1 {
 
 h2 {
   font-family: 'Otomanopee', sans-serif;
-  color: #000;
-  font-size: 30pt;
+  color: #9F5E2E;
+  text-shadow: 1px 1px 2px black;
+  font-size: 38pt;
   margin: 80px auto;
   text-align: center;
 }
 
-/*DEFININDO CORES DAS TABELAS*/
 
-table {
-  background-color: #e0b377;
-  padding: 5px;
-  margin: 10px auto;
-  width: 20rem;
-}
-
-table td {
-  background-color: #B3782A;
-  padding: 10px;
-  margin: 10px;
-}
-
-table td.ce {
-  background-color: #fad3a1;
-}
 
