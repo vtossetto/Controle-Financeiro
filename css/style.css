@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 
-.site {
-  background: #F9EFE5;
+#site {
+  background: #ffffff;
   display: grid;
   font-family: Arial, sans-serif;
   grid-template-areas:
@@ -24,76 +24,8 @@
 }
 
 .rodape {
-  background: #9F5E2E;
-  color: #fff;
-  font-size: 1rem;
   grid-area: rodape;
+  font-size: 1rem;  
   padding: 1rem;
   text-align: center;
 }
-
-/*ESTILIZANDO O MENU*/
-nav#menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90px;
-  background-color: #9F5E2E;
-}
-
-nav#menu ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  margin: 0;
-  text-transform: uppercase;
-  
-}
-
-nav#menu li {
-  display: inline-block;
-  padding: 10px;
-  margin: 2px;
-  transition: background-color 0.5s;
-}
-
-nav#menu li:hover {
-  background-color: #F9EFE5;
-}
-
-nav#menu a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight:bold
-}
-
-nav#menu a:hover {
-  text-decoration: underline;
-  color: #000;
-}
-
-/*DEFININDO CORES DE FONTES*/
-
-h1 {
-  font-family: 'Otomanopee', sans-serif;
-  color: #9F5E2E;
-  font-size: 52pt;
-  text-shadow: 1px 1px 2px black;
-  margin: 50px;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-h2 {
-  font-family: 'Otomanopee', sans-serif;
-  color: #9F5E2E;
-  text-shadow: 1px 1px 2px black;
-  font-size: 38pt;
-  margin: 80px auto;
-  text-align: center;
-}
-
-
-
