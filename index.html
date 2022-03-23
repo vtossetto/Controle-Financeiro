@@ -7,11 +7,12 @@
     <title>Controle Financeiro</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/colunas.css" />
   </head>
 
-  <body id="site">  
+  <body>  
     
-    <header id="cabecalho">
+    <header class="cabecalho">
       <div class="caixa-cabecalho">
         <h1>Controle Financeiro $</h1>
         <nav>
@@ -25,122 +26,184 @@
       
     </header>
 
-    <main id="conteudo">
-      <form>
-        <label for="periodo">Selecione o período</label>
-        <input id="periodo" type="month">
-
-      </form>
+    <main class="conteudo">
+      <div class="selecionar-periodo">
+        <form>
+          <label for="periodo">Selecione o período</label>
+          <input id="periodo" type="month">
+  
+        </form>
+      </div>  
       
-      <h2 id="despesas">Despesas</h2>
-      <section id="principal">
-        <div id="despesasFixas">
-          <table id="despesasTable">
-            <tr><td colspan="2" class="tituloTabela">DESPESAS FIXAS:</td></tr>
-            <tr><td class="ce">Cartão de Crédito:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce">Alimentação:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce">Transporte:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>            
+      <h2 class="despesas">Despesas</h2>
+
+      <section class="principal">
+        
+        <div class="despesas-fixas">
+          <table>
+            <thead>
+              <tr><th colspan="2" class="tituloTabela">DESPESAS FIXAS:</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="ce">Cartão de Crédito:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce">Alimentação:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce">Transporte:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>  
+            </tbody>
+                      
           </table>
           <button id="btnAdicionarDespesa">Adicionar Despesa</button>
         </div>
-        <div id="entradas">
+
+
+        <div class="entradas">
           <table>
-            <tr><td colspan="2" class="tituloTabela">ENTRADAS</td></tr>
-            <tr><td class="ce">Salário líquido:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce">Vale Alimentação:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>            
+            <thead>
+              <tr><th colspan="2" class="tituloTabela">ENTRADAS</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="ce">Salário líquido:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce">Vale Alimentação:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>     
+            </tbody>                   
           </table>
           <button id="btnAdicionarEntrada">Adicionar Entrada</button>
         </div>
-        <div id="saldo">
+
+
+        <div class="saldo">
           <table>
-            <tr><td colspan="2" class="tituloTabela">SALDO</td></tr>
-            <tr><td class="ce">Total Recebido:</td><td class="cd" id="totalrecebido">xxxxxx</td></tr>
-            <tr><td class="ce">Total Gastos:</td><td class="cd" id="totalGastos">xxxxxx</td></tr>
-            <tr><td class="ce">Saldo</td><td class="cd" id="saldo">xxxxxx</td></tr>
+            <thead>
+              <tr><th colspan="2" class="tituloTabela">SALDO</th></tr>
+            </thead>
+            <body>
+              <tr><td class="ce">Total Recebido:</td><td class="cd" id="totalrecebido">xxxxxx</td></tr>
+              <tr><td class="ce">Total Gastos:</td><td class="cd" id="totalGastos">xxxxxx</td></tr>
+              <tr><td class="ce">Saldo</td><td class="cd" id="saldo">xxxxxx</td></tr>
+            </body>            
           </table>
         </div>
       </section>
-      <h2 id= "detalhamento">Detalhamento</h2>
-      <section id="contasDetalhadas">
-        <div id="cartaoCredito">
+
+      <h2 class= "detalhamento">Detalhamento</h2>
+
+      <section class="contas-detalhadas">
+        
+        <div class="cartao-credito">
           <table>
-            <tr><td colspan="2" class="tituloTabela">CARTÃO DE CRÉDITO</td></tr>
-            <tr><td class="ce"><input type="text" class="descricao" placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+            <thead>
+              <tr><th colspan="2" class="tituloTabela">CARTÃO DE CRÉDITO</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="ce"><input type="text" class="descricao" placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+            </tbody>            
           </table>
           <button id="btnAdicionarCartao">Adicionar Despesa</button>
         </div>
-        <div id="alimentacao">
+
+
+        <div class="alimentacao">
           <table>
-            <tr><td colspan="2" class="tituloTabela">ALIMENTAÇÃO</td></tr>
-            <tr><td class="ce"><input type="text" class="descricao" placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+            <thead>
+              <tr><th colspan="2" class="tituloTabela">ALIMENTAÇÃO</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="ce"><input type="text" class="descricao" placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+            </tbody>            
           </table>
           <button id="btnAdicionarAlimentacao">Adicionar Despesa</button>
         </div>  
-        <div id="transporte">
+
+
+        <div class="transporte">
           <table>
-            <tr><td colspan="2" class="tituloTabela">TRANSPORTE</td></tr>
-            <tr><td class="ce"><input type="text" class="descricao" placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+            <thead>
+              <tr><th colspan="2" class="tituloTabela">TRANSPORTE</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="ce"><input type="text" class="descricao" placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite a despesa"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+            </tbody>            
           </table>
           <button id="btnAdicionarTransporte">Adicionar Despesa</button>
-        </div>
-          
+        </div>          
       </section>
-      <h3 id="reserva">Reserva</h2>
-      <section id="reservasDetalhadas">
-        <div id="curtoPrazo">
+
+      <h3 class="reserva">Reserva</h2>
+
+      <section class="reservas-detalhadas">
+        
+        <div class="curto-prazo">
           <table>
-            <tr><td colspan="2" class="tituloTabela">CURTO PRAZO</td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+            <thead>
+              <tr><th colspan="2" class="tituloTabela">CURTO PRAZO</th></tr>
+            </thead>
+            <tbody>            
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+            </tbody>
           </table>
           <button id="btnAdicionarProjetoCP">Adicionar Projeto</button>
-          <table id="total-cp">            
+          
+          <table class="total-cp">            
             <tr><td class="ce">Este Mês:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr></td></tr>
             <tr><td class="ce">TOTAL:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr></td></tr>
           </table>
         </div>
-        <div id="medioPrazo">
+
+
+        <div class="medio-prazo">
           <table>
-            <tr><td colspan="2" class="tituloTabela">MÉDIO PRAZO</td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+            <thead>
+              <tr><th colspan="2" class="tituloTabela">MÉDIO PRAZO</th></tr>
+            </thead>            
+            <tbody>            
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+            </tbody>
           </table>
           <button id="btnAdicionarProjetoMP">Adicionar Projeto</button>
-          <table id="total-cp">            
+
+          <table class="total-cp">            
             <tr><td class="ce">Este Mês:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr></td></tr>
             <tr><td class="ce">TOTAL:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr></td></tr>
           </table>
         </div>
-        <div id="longoLrazo">
+
+
+        <div class="longo-prazo">
           <table>
-            <tr><td colspan="2" class="tituloTabela" >LONGO PRAZO</td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+            <thead>
+              <tr><th colspan="2" class="tituloTabela" >LONGO PRAZO</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
+            </tbody>
           </table>
           <button id="btnAdicionarProjetoLP">Adicionar Projeto</button>
-          <table id="total-cp">            
+
+          <table class="total-cp">            
             <tr><td class="ce">Este Mês:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr></td></tr>
             <tr><td class="ce">TOTAL:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr></td></tr>
           </table>
         </div>        
       </section>
     </main>
-    <footer id="rodape">
+
+    <footer class="rodape">
       <p>&copy; Copyright Vanessa Tossetto - 2022 | Github @vtossetto</p>
     </footer>
     

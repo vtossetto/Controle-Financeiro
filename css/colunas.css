@@ -1,0 +1,62 @@
+.conteudo {
+  height: calc(100vh - 100px);
+}
+
+.principal, .contas-detalhadas, .reservas-detalhadas {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: none;    
+    justify-content: center;
+    margin: auto 200px;
+}
+
+/*despesas*/
+.despesas-fixas {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+  
+.entradas {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+
+.saldo {
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+
+/*detalamento*/
+.cartao-credito {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.alimentacao{
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+
+.transporte{
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+
+
+/*reserva*/
+.curto-prazo {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.medio-prazo {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+
+.longo-prazo {
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+
+

@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 
-#site {
-  background: #ffffff;
+body {
+  background: #f1f1f1;
   display: grid;
   font-family: Arial, sans-serif;
   grid-template-areas:
@@ -11,15 +11,26 @@
     "rodape";
   grid-template-columns: auto;
   grid-template-rows: 100px auto 50px;
+  
 } 
 
-#cabecalho {
+.cabecalho {
   background-color: #B09C5E;
   color: #ffffff;
-  
-  
-  
+  grid-area: cabecalho;
 }
+
+.conteudo {
+  grid-area: conteudo;
+}
+
+.rodape {
+  background-color: #B09C5E;
+  grid-area: rodape;
+  color: #ffffff;
+  text-align: center;
+}
+
 
 h1 {
   font-size: 45px;
@@ -50,25 +61,23 @@ nav a {
   font-size: 20px;
 }
 
-#conteudo {
-  
+.selecionar-periodo {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
 h2, h3 {
+  margin: 10px;
+  padding: 10px;
   color: #B09C5E;
   text-align: center;
-}
-
-#rodape {
-  background-color: #B09C5E;
-  color: #ffffff;
-  font-size: 1rem;  
-  padding: 1rem;
-  text-align: center;
+  font-size: 30px;
 }
 
 table {
   background: #E9DFC2;
+  font-size: 16px;
 }
 
 .tituloTabela {
@@ -80,3 +89,4 @@ table {
 tr {
   background: #ffffff;
 }
+
