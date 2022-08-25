@@ -40,7 +40,7 @@
       <section class="principal">
         
         <div class="despesas-fixas">
-          <table>
+          <table id="despesasTable">
             <thead>
               <tr><th colspan="2" class="tituloTabela">DESPESAS FIXAS:</th></tr>
             </thead>
@@ -56,7 +56,7 @@
 
 
         <div class="entradas">
-          <table>
+          <table id="entradasTable">
             <thead>
               <tr><th colspan="2" class="tituloTabela">ENTRADAS</th></tr>
             </thead>
@@ -88,7 +88,7 @@
       <section class="contas-detalhadas">
         
         <div class="cartao-credito">
-          <table>
+          <table id="cartaoTable">
             <thead>
               <tr><th colspan="2" class="tituloTabela">CARTÃO DE CRÉDITO</th></tr>
             </thead>
@@ -105,7 +105,7 @@
 
 
         <div class="alimentacao">
-          <table>
+          <table id="alimentacaoTable">
             <thead>
               <tr><th colspan="2" class="tituloTabela">ALIMENTAÇÃO</th></tr>
             </thead>
@@ -122,7 +122,7 @@
 
 
         <div class="transporte">
-          <table>
+          <table id="transporteTable">
             <thead>
               <tr><th colspan="2" class="tituloTabela">TRANSPORTE</th></tr>
             </thead>
@@ -138,75 +138,14 @@
         </div>          
       </section>
 
-      <h3 class="reserva">Reserva</h2>
-
-      <section class="reservas-detalhadas">
-        
-        <div class="curto-prazo">
-          <table>
-            <thead>
-              <tr><th colspan="2" class="tituloTabela">CURTO PRAZO</th></tr>
-            </thead>
-            <tbody>            
-              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            </tbody>
-          </table>
-          <button id="btnAdicionarProjetoCP">Adicionar Projeto</button>
-          
-          <table class="total-cp">            
-            <tr><td class="ce">Este Mês:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr></td></tr>
-            <tr><td class="ce">TOTAL:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr></td></tr>
-          </table>
-        </div>
-
-
-        <div class="medio-prazo">
-          <table>
-            <thead>
-              <tr><th colspan="2" class="tituloTabela">MÉDIO PRAZO</th></tr>
-            </thead>            
-            <tbody>            
-              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            </tbody>
-          </table>
-          <button id="btnAdicionarProjetoMP">Adicionar Projeto</button>
-
-          <table class="total-cp">            
-            <tr><td class="ce">Este Mês:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr></td></tr>
-            <tr><td class="ce">TOTAL:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr></td></tr>
-          </table>
-        </div>
-
-
-        <div class="longo-prazo">
-          <table>
-            <thead>
-              <tr><th colspan="2" class="tituloTabela" >LONGO PRAZO</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-              <tr><td class="ce"><input type="text" class="descricao"  placeholder="Digite o projeto"></td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr>
-            </tbody>
-          </table>
-          <button id="btnAdicionarProjetoLP">Adicionar Projeto</button>
-
-          <table class="total-cp">            
-            <tr><td class="ce">Este Mês:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr></td></tr>
-            <tr><td class="ce">TOTAL:</td><td class="cd"><input type="number" class="valor" placeholder="Digite o Valor"></td></tr></td></tr>
-          </table>
-        </div>        
-      </section>
+      
     </main>
 
     <footer class="rodape">
       <p>&copy; Copyright Vanessa Tossetto - 2022 | Github @vtossetto</p>
     </footer>
     
+    <script src="js/script.js"></script>
   </body>
 
 </html>
